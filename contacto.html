@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contactá a Dejando Huella CR — rescate animal en la Zona Sur de Costa Rica. Adopciones, donaciones y voluntariado." />
+  <title>Contacto | Dejando Huella CR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐾</span>
+        <span>Dejando Huella CR</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menú" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="adopcion.html">Huellas que Esperan</a>
+        <a href="casos-exito.html">Casos de Éxito</a>
+        <a href="como-ayudar.html">Cómo Ayudar</a>
+        <a href="contacto.html" class="active">Contacto</a>
+        <a href="adopcion.html" class="btn btn-primary btn-sm">Adoptar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Contacto</h1>
+        <p>Escribinos por adopción, donaciones, voluntariado o para reportar un animal en riesgo.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-item">
+            <div class="icon">📍</div>
+            <div>
+              <h4>Ubicación</h4>
+              <p>Zona Sur, Costa Rica<br />Pérez Zeledón y alrededores</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">📧</div>
+            <div>
+              <h4>Correo</h4>
+              <p><a href="mailto:hola@dejandohuellacr.org">hola@dejandohuellacr.org</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">📱</div>
+            <div>
+              <h4>WhatsApp / Teléfono</h4>
+              <p><a href="tel:+50688880000">+506 8888-0000</a><br /><span style="font-size:0.85rem">(Actualizá con el número real de la fundación)</span></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">⏰</div>
+            <div>
+              <h4>Horario de respuesta</h4>
+              <p>Lunes a sábado · Respondemos lo más pronto posible (somos voluntarios).</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div id="form-message" class="form-message" role="alert"></div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo *</label>
+              <input type="email" id="email" name="email" required placeholder="tu@correo.com" autocomplete="email" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="8888-0000" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto">
+                <option value="general">Consulta general</option>
+                <option value="adopcion">Quiero adoptar</option>
+                <option value="casa-cuna">Ser casa cuna</option>
+                <option value="apadrinar">Apadrinar</option>
+                <option value="voluntariado">Voluntariado</option>
+                <option value="donacion">Donación</option>
+                <option value="rescate">Reportar animal en riesgo</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" name="mensaje" required placeholder="Contanos cómo podemos ayudarte..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar mensaje 🐾</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">🐾</span>
+            <span>Dejando Huella CR</span>
+          </a>
+          <p>Fundación de rescate animal en la Zona Sur de Costa Rica.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="adopcion.html">Huellas que Esperan</a>
+          <a href="casos-exito.html">Casos de Éxito</a>
+          <a href="como-ayudar.html">Cómo Ayudar</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="contacto.html">Escribinos</a>
+          <a href="mailto:hola@dejandohuellacr.org">hola@dejandohuellacr.org</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <a href="contacto.html">Zona Sur, Costa Rica</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dejando Huella CR.</span>
+        <a href="admin/login.html">Acceso admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script type="module" src="js/animals.js"></script>
+</body>
+</html>

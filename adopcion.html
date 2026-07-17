@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Huellas que Esperan — adoptá un perrito o gato rescatado por Dejando Huella CR en la Zona Sur de Costa Rica." />
+  <title>Huellas que Esperan | Adopción · Dejando Huella CR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐾</span>
+        <span>Dejando Huella CR</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menú" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="adopcion.html" class="active">Huellas que Esperan</a>
+        <a href="casos-exito.html">Casos de Éxito</a>
+        <a href="como-ayudar.html">Cómo Ayudar</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="adopcion.html" class="btn btn-primary btn-sm">Adoptar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Huellas que Esperan</h1>
+        <p>
+          Aquí están los perritos y gatos que ya superaron lo más difícil y solo necesitan
+          una familia que les diga: “bienvenido a casa”.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="filters" role="group" aria-label="Filtrar por tipo">
+          <button type="button" class="filter-btn active" data-filter="todos">Todos</button>
+          <button type="button" class="filter-btn" data-filter="perro">🐶 Perritos</button>
+          <button type="button" class="filter-btn" data-filter="gato">🐱 Gatitos</button>
+        </div>
+
+        <div class="animals-grid" id="animals-grid">
+          <div class="loading-state">
+            <div class="spinner"></div>
+            <p>Cargando huellitas...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">Proceso</span>
+          <h2>¿Cómo es adoptar con nosotros?</h2>
+          <p>Queremos que la adopción sea segura para el animal y feliz para vos.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">1️⃣</div>
+            <h3>Elegí tu compañero</h3>
+            <p>Mirá los perfiles, conocé su historia y sentí si hay “click” con alguno.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">2️⃣</div>
+            <h3>Contactanos</h3>
+            <p>Completá el formulario o escribinos. Coordinamos una charla y, si es posible, una visita.</p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">3️⃣</div>
+            <h3>Firma y bienvenida</h3>
+            <p>Firmamos un compromiso de adopción responsable y te acompañamos en la adaptación.</p>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem" class="reveal">
+          <a href="contacto.html?asunto=adopcion" class="btn btn-primary">Quiero adoptar 💕</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal detalle animal -->
+  <div class="modal-overlay" id="animal-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <button type="button" class="modal-close" aria-label="Cerrar">✕</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">🐾</span>
+            <span>Dejando Huella CR</span>
+          </a>
+          <p>Fundación de rescate animal en la Zona Sur de Costa Rica.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="adopcion.html">Huellas que Esperan</a>
+          <a href="casos-exito.html">Casos de Éxito</a>
+          <a href="como-ayudar.html">Cómo Ayudar</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="contacto.html">Escribinos</a>
+          <a href="mailto:hola@dejandohuellacr.org">hola@dejandohuellacr.org</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <a href="contacto.html">Zona Sur, Costa Rica</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dejando Huella CR.</span>
+        <a href="admin/login.html">Acceso admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script type="module" src="js/animals.js"></script>
+</body>
+</html>

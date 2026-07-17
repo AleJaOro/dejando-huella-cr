@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /animales/{animalId} {
+      // Lectura pública para el sitio de adopción
+      allow read: if true;
+      // Solo administradores autenticados pueden modificar
+      allow create, update, delete: if request.auth != null;
+    }
+  }
+}

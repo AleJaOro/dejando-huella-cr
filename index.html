@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dejando Huella CR — Fundación de rescate animal en la Zona Sur de Costa Rica. Rescatamos, rehabilitamos y buscamos hogares para perritos y gatos." />
+  <title>Dejando Huella CR | Rescate Animal · Zona Sur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐾</span>
+        <span>Dejando Huella CR</span>
+      </a>
+      <button class="nav-toggle" aria-label="Menú" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links">
+        <a href="index.html" class="active">Inicio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="adopcion.html">Huellas que Esperan</a>
+        <a href="casos-exito.html">Casos de Éxito</a>
+        <a href="como-ayudar.html">Cómo Ayudar</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="adopcion.html" class="btn btn-primary btn-sm">Adoptar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Cada rescate deja una <em>huella de amor</em></h1>
+          <p class="lead">
+            En la Zona Sur de Costa Rica rescatamos perritos y gatos, les damos una segunda oportunidad
+            y los conectamos con familias que cambian su vida para siempre.
+          </p>
+          <div class="hero-actions">
+            <a href="adopcion.html" class="btn btn-primary">Ver animalitos 🐶</a>
+            <a href="como-ayudar.html" class="btn btn-secondary">Cómo ayudar</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>200+</strong>
+              <span>Vidas rescatadas</span>
+            </div>
+            <div class="stat">
+              <strong>150+</strong>
+              <span>Adopciones felices</span>
+            </div>
+            <div class="stat">
+              <strong>100%</strong>
+              <span>Amor y compromiso</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <img
+              src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80"
+              alt="Perrito rescatado feliz"
+            />
+          </div>
+          <div class="hero-badge">
+            <span class="emoji">💚</span>
+            <div>
+              <strong>Zona Sur, CR</strong>
+              <span>Rescate con corazón</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">Lo que hacemos</span>
+          <h2>Más que un rescate: un nuevo comienzo</h2>
+          <p>Cuidamos cada etapa del proceso con paciencia, medicina y mucho cariño.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card reveal">
+            <div class="feature-icon">🚑</div>
+            <h3>Rescate y rehabilitación</h3>
+            <p>
+              Atendemos urgencias, curamos heridas y damos un espacio seguro para que se recuperen
+              física y emocionalmente.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">🏠</div>
+            <h3>Hogares temporales</h3>
+            <p>
+              Nuestros voluntarios y casas cuna ofrecen calidez, comida y socialización mientras
+              llega la familia definitiva.
+            </p>
+          </article>
+          <article class="feature-card reveal">
+            <div class="feature-icon">💕</div>
+            <h3>Adopción responsable</h3>
+            <p>
+              Acompañamos cada adopción para asegurar un match perfecto entre el animal y su
+              nueva familia.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">Huellas que Esperan</span>
+          <h2>¿Listos para adoptar?</h2>
+          <p>Estos compañeritos ya están listos para llenar un hogar de alegría.</p>
+        </div>
+        <div class="animals-grid" id="home-animals-grid">
+          <div class="loading-state">
+            <div class="spinner"></div>
+            <p>Cargando huellitas...</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem" class="reveal">
+          <a href="adopcion.html" class="btn btn-mint">Ver todos los animalitos</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title reveal">
+          <span class="eyebrow">Historias reales</span>
+          <h2>Casos de éxito que nos inspiran</h2>
+          <p>De la calle al sofá: transformaciones que nos recuerdan por qué seguimos.</p>
+        </div>
+        <div class="stories-grid">
+          <article class="story-card reveal">
+            <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?w=600&q=80" alt="Luna adoptada" />
+            <div class="story-body">
+              <span class="tag">Adoptada</span>
+              <h3>Luna encontró su sol</h3>
+              <p>
+                Rescatada desnutrida en Pérez Zeledón, hoy corre libre en una finca con niños
+                que la adoran.
+              </p>
+              <div class="story-quote">“Luna nos eligió a nosotros. Cambió nuestra familia.”</div>
+            </div>
+          </article>
+          <article class="story-card reveal">
+            <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=600&q=80" alt="Michi rescatado" />
+            <div class="story-body">
+              <span class="tag">Adoptado</span>
+              <h3>Michi, el rey de la ventana</h3>
+              <p>
+                Un gatito tímido que hoy duerme en almohadones y vigila los pájaros con calma total.
+              </p>
+              <div class="story-quote">“No sabíamos cuánto amor cabía en un michi pequeño.”</div>
+            </div>
+          </article>
+          <article class="story-card reveal">
+            <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=600&q=80" alt="Toby recuperado" />
+            <div class="story-body">
+              <span class="tag">Adoptado</span>
+              <h3>Toby y su segunda chance</h3>
+              <p>
+                Llegó con miedo a los humanos. Hoy es el mejor amigo de un abuelo en Golfito.
+              </p>
+              <div class="story-quote">“Toby me sacó a caminar… y me devolvió las ganas.”</div>
+            </div>
+          </article>
+        </div>
+        <div style="text-align:center;margin-top:2.5rem" class="reveal">
+          <a href="casos-exito.html" class="btn btn-secondary">Más historias de esperanza</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>¿Querés dejar tu huella con nosotros?</h2>
+          <p>
+            Adoptá, apadriná, doná o abrí tu casa como hogar temporal.
+            Cada gesto cuenta en la Zona Sur.
+          </p>
+          <a href="como-ayudar.html" class="btn">Quiero ayudar 🐾</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon">🐾</span>
+            <span>Dejando Huella CR</span>
+          </a>
+          <p>
+            Fundación de rescate animal en la Zona Sur de Costa Rica.
+            Salvamos vidas, una huella a la vez.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Explorar</h4>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="adopcion.html">Huellas que Esperan</a>
+          <a href="casos-exito.html">Casos de Éxito</a>
+          <a href="como-ayudar.html">Cómo Ayudar</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="contacto.html">Escribinos</a>
+          <a href="mailto:hola@dejandohuellacr.org">hola@dejandohuellacr.org</a>
+          <a href="tel:+50688880000">+506 8888-0000</a>
+        </div>
+        <div class="footer-col">
+          <h4>Ubicación</h4>
+          <a href="contacto.html">Zona Sur, Costa Rica</a>
+          <a href="contacto.html">Pérez Zeledón y alrededores</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Dejando Huella CR. Hecho con amor por los animales.</span>
+        <a href="admin/login.html">Acceso admin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script type="module" src="js/animals.js"></script>
+</body>
+</html>
