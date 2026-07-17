@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Admin · Dashboard | Dejando Huella CR</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/admin.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>" />
+</head>
+<body class="admin-body">
+  <header class="admin-header">
+    <div class="container inner">
+      <div class="logo">
+        <span class="logo-icon">🐾</span>
+        <h1>Panel · Huellas que Esperan</h1>
+      </div>
+      <div class="admin-actions">
+        <span class="admin-user" id="admin-user-email">Admin</span>
+        <a href="../adopcion.html" class="btn btn-secondary btn-sm" target="_blank">Ver sitio</a>
+        <button type="button" class="btn btn-primary btn-sm" id="btn-logout">Salir</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <div class="container">
+      <div class="admin-toolbar">
+        <div>
+          <h2>Animalitos en adopción</h2>
+          <p style="color:var(--text-muted);font-size:0.92rem;margin-top:0.25rem">
+            Agregá, editá o eliminá. Los cambios se reflejan al instante en “Huellas que Esperan”.
+          </p>
+        </div>
+        <button type="button" class="btn btn-mint" id="btn-add">+ Agregar animalito</button>
+      </div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Foto</th>
+              <th>Nombre</th>
+              <th>Tipo</th>
+              <th>Edad</th>
+              <th>Sexo</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody id="animals-table-body">
+            <tr>
+              <td colspan="7" class="empty-admin">Cargando...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal form -->
+  <div class="modal-overlay admin-modal" id="form-modal">
+    <div class="modal">
+      <button type="button" class="modal-close" aria-label="Cerrar">✕</button>
+      <div class="modal-body">
+        <h2 id="form-title">Agregar animalito</h2>
+        <form id="animal-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" required placeholder="Ej: Luna" />
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo *</label>
+              <select id="tipo" required>
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="edad">Edad</label>
+              <input type="text" id="edad" placeholder="Ej: 2 años, 4 meses" />
+            </div>
+            <div class="form-group">
+              <label for="sexo">Sexo</label>
+              <select id="sexo">
+                <option value="Macho">Macho</option>
+                <option value="Hembra">Hembra</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tamaño">Tamaño</label>
+              <select id="tamaño">
+                <option value="Pequeño">Pequeño</option>
+                <option value="Mediano" selected>Mediano</option>
+                <option value="Grande">Grande</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="estado">Estado</label>
+              <select id="estado">
+                <option value="disponible">Disponible</option>
+                <option value="reservado">Reservado</option>
+                <option value="adoptado">Adoptado</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="imagen">URL de la imagen</label>
+            <input type="url" id="imagen" placeholder="https://..." />
+            <img id="img-preview" class="img-preview" alt="Vista previa" />
+          </div>
+          <div class="form-group">
+            <label for="personalidad">Personalidad</label>
+            <input type="text" id="personalidad" placeholder="Juguetón, cariñoso, tranquilo..." />
+          </div>
+          <div class="form-group">
+            <label for="descripcion">Descripción / historia</label>
+            <textarea id="descripcion" placeholder="Contá su historia y qué tipo de hogar necesita..."></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" id="btn-cancel-form">Cancelar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/admin.js"></script>
+</body>
+</html>
